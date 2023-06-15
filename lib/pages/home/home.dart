@@ -1,5 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:stressout/pages/home/widgets/card.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 import '../onboarding/onboarding.dart';
 
@@ -38,8 +40,60 @@ class _HomeState extends State<Home> {
           IconButton(onPressed: signUserOut, icon: const Icon(Icons.logout))
         ],
       ),
-      body: Center(
-        child: Text('Welcome, ${_currentUser?.email}'),
+      body: SafeArea(
+        child: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              const SizedBox(
+                height: 20,
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  // Text('Welcome, ${_currentUser?.email}'),
+
+                  SvgPicture.asset('assets/images/background-home-1.svg',
+                      height: 200),
+                ],
+              ),
+              const Spacer(),
+              const Column(
+                mainAxisAlignment: MainAxisAlignment.end,
+                children: [
+                  Row(
+                    children: [
+                      Expanded(
+                        child: MyCard(
+                            label: 'APPS',
+                            imagePath: 'assets/images/card-1.svg'),
+                      ),
+                      Expanded(
+                        child: MyCard(
+                            label: 'STATISTICS',
+                            imagePath: 'assets/images/card-2.svg'),
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      Expanded(
+                        child: MyCard(
+                            label: 'APPS',
+                            imagePath: 'assets/images/card-1.svg'),
+                      ),
+                      Expanded(
+                        child: MyCard(
+                            label: 'STATISTICS',
+                            imagePath: 'assets/images/card-2.svg'),
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+            ],
+          ),
+        ),
       ),
     );
   }
