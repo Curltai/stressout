@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "900466540912",
+    "project_id": "stressout-faf40",
+    "storage_bucket": "stressout-faf40.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:900466540912:android:0f5c42e5d9ed4491028fb5",
+        "android_client_info": {
+          "package_name": "com.example.stressout"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "900466540912-nd4u7a5cvpscsn6a93jobjh66dt2a3e1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAsHTzKhrI_lR1S91Du86I9S9ZGE3JFglA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "900466540912-nd4u7a5cvpscsn6a93jobjh66dt2a3e1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

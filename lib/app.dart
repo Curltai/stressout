@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:stressout/pages/onboarding/onboarding.dart';
+import 'package:stressout/pages/authentication/auth.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.pink,
       ),
-      home: const Onboarding(),
+      home: const AuthPage(),
     );
   }
 }

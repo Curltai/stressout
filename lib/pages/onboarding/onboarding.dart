@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:stressout/pages/home/home.dart';
+import 'package:stressout/pages/login/login.dart';
 
 import 'content_model.dart';
 
@@ -95,7 +96,7 @@ class _OnboardingState extends State<Onboarding> {
                   Navigator.pushReplacement(
                     context,
                     MaterialPageRoute(
-                      builder: (_) => Home(),
+                      builder: (_) => const Login(),
                     ),
                   );
                 }
