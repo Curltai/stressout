@@ -3,8 +3,10 @@ import 'package:flutter/material.dart';
 import 'package:stressout/pages/applications/apps.dart';
 import 'package:stressout/pages/home/widgets/card.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:fl_chart/fl_chart.dart';
 
 import '../../onboarding/onboarding.dart';
+import '../widgets/progress_bar.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -34,6 +36,16 @@ class _HomeState extends State<Home> {
 
   @override
   Widget build(BuildContext context) {
+    double instagramHours = 15.0; // Hours spent on Instagram weekly
+    double tiktokHours = 8.0; // Hours spent on TikTok weekly
+    int stressLevel = 5; // Stress level
+
+    double instagramProgress =
+        instagramHours / 24.0; // Assuming a week has 24 hours
+    double tiktokProgress = tiktokHours / 24.0; // Assuming a week has 24 hours
+    double stressProgress =
+        stressLevel / 10.0; // Assuming stress level ranges from 0 to 10
+
     return Scaffold(
       appBar: AppBar(
         title: const Text("Home Page"),
@@ -59,11 +71,35 @@ class _HomeState extends State<Home> {
               //   ],
               // ),
               Text(
-                'Welcome, ${_currentUser?.email}',
-                style: TextStyle(fontSize: 20, color: Colors.black),
+                // 'Welcome, ${_currentUser?.email}',
+                'Welcome, Talant',
+                style: const TextStyle(
+                    fontSize: 25,
+                    color: Colors.black,
+                    fontWeight: FontWeight.bold),
               ),
+              const Divider(
+                thickness: 2,
+              ),
+              SizedBox(
+                height: 20,
+              ),
+
+              Padding(
+                padding: EdgeInsets.all(16),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    ProgressBar(
+                        itemName: 'Instagram', progress: instagramProgress),
+                    ProgressBar(itemName: 'TikTok', progress: tiktokProgress),
+                    ProgressBar(itemName: 'Other', progress: stressProgress),
+                  ],
+                ),
+              ),
+
               const Spacer(),
-              Divider(
+              const Divider(
                 thickness: 2,
               ),
               Column(
@@ -77,19 +113,19 @@ class _HomeState extends State<Home> {
                             Navigator.of(context).push(MaterialPageRoute(
                                 builder: (context) => const AppsPage())),
                           },
-                          child: MyCard(
+                          child: const MyCard(
                               label: 'APPS',
                               imagePath: 'assets/images/card-1.svg'),
                         ),
                       ),
-                      Expanded(
+                      const Expanded(
                         child: MyCard(
                             label: 'STATISTICS',
                             imagePath: 'assets/images/card-2.svg'),
                       ),
                     ],
                   ),
-                  Row(
+                  const Row(
                     children: [
                       Expanded(
                         child: MyCard(
