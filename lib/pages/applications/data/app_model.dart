@@ -1,51 +1,51 @@
 class ApplicationName {
-  String image;
+  String icon;
   String name;
   bool favorite;
 
   ApplicationName(
-      {required this.image, required this.name, required this.favorite});
+      {required this.icon, required this.name, required this.favorite});
 }
 
 List<ApplicationName> apps = [
   ApplicationName(
     name: 'Instagram',
     favorite: true,
-    image: 'assets/images/onboarding-1.svg',
+    icon: 'assets/images/instagram.svg',
   ),
   ApplicationName(
     name: 'Youtube',
     favorite: true,
-    image: 'assets/images/onboarding-2.svg',
+    icon: 'assets/images/youtube.svg',
   ),
   ApplicationName(
     name: 'Facebook',
     favorite: false,
-    image: 'assets/images/onboarding-3.svg',
+    icon: 'assets/images/facebook.svg',
   ),
   ApplicationName(
     name: 'Twitter',
     favorite: false,
-    image: 'assets/images/onboarding-3.svg',
+    icon: 'assets/images/twitter.svg',
   ),
   ApplicationName(
-    name: 'Instagram',
+    name: 'Pinterest',
     favorite: true,
-    image: 'assets/images/onboarding-1.svg',
+    icon: 'assets/images/pinterest.svg',
   ),
   ApplicationName(
-    name: 'Youtube',
+    name: 'Linkedin',
     favorite: true,
-    image: 'assets/images/onboarding-2.svg',
+    icon: 'assets/images/linkedin.svg',
   ),
   ApplicationName(
-    name: 'Facebook',
+    name: 'Whatsapp',
     favorite: false,
-    image: 'assets/images/onboarding-3.svg',
+    icon: 'assets/images/whatsapp.svg',
   ),
   ApplicationName(
-    name: 'Twitter',
+    name: 'Spotify',
     favorite: false,
-    image: 'assets/images/onboarding-3.svg',
+    icon: 'assets/images/spotify.svg',
   ),
 ];

@@ -49,20 +49,23 @@ class _HomeState extends State<Home> {
               const SizedBox(
                 height: 20,
               ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  // Text('Welcome, ${_currentUser?.email}'),
+              // Row(
+              //   mainAxisAlignment: MainAxisAlignment.center,
+              //   children: [
+              //     // Text('Welcome, ${_currentUser?.email}'),
 
-                  SvgPicture.asset('assets/images/background-home-1.svg',
-                      height: 150),
-                ],
-              ),
-              // Text(
-              //   'Welcome, ${_currentUser?.email}',
-              //   style: TextStyle(fontSize: 20, color: Colors.black),
+              //     SvgPicture.asset('assets/images/background-home-1.svg',
+              //         height: 150),
+              //   ],
               // ),
+              Text(
+                'Welcome, ${_currentUser?.email}',
+                style: TextStyle(fontSize: 20, color: Colors.black),
+              ),
               const Spacer(),
+              Divider(
+                thickness: 2,
+              ),
               Column(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
@@ -90,13 +93,13 @@ class _HomeState extends State<Home> {
                     children: [
                       Expanded(
                         child: MyCard(
-                            label: 'APPS',
-                            imagePath: 'assets/images/card-1.svg'),
+                            label: 'WALLETS',
+                            imagePath: 'assets/images/card-3.svg'),
                       ),
                       Expanded(
                         child: MyCard(
-                            label: 'STATISTICS',
-                            imagePath: 'assets/images/card-2.svg'),
+                            label: 'SETTINGS',
+                            imagePath: 'assets/images/card-4.svg'),
                       ),
                     ],
                   ),
