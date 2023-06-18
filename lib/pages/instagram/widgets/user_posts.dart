@@ -41,7 +41,7 @@ class UserPosts extends StatelessWidget {
         // post
         Container(
           height: 400,
-          color: post.user == 'nurakyrgyz' ? Colors.grey[300] : null,
+          color: post.user == 'nurakyrgyz' ? Colors.red[300] : null,
           decoration: post.user != 'nurakyrgyz'
               ? BoxDecoration(
                   image: DecorationImage(
@@ -52,7 +52,8 @@ class UserPosts extends StatelessWidget {
               ? Center(
                   child: Text(
                     'Blocked by stressout',
-                    style: TextStyle(fontWeight: FontWeight.bold),
+                    style: TextStyle(
+                        fontWeight: FontWeight.bold, color: Colors.white),
                   ),
                 )
               : null,
