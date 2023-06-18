@@ -4,6 +4,11 @@ Stressout web3 super app integrates with popular social media platforms and prov
 We employ two machine learning models for content filtering. The first model universally blocks offensive language and blurs filtered content. The second model is personalized, learning from user preferences and feedback to provide a more tailored filtering system.
 To capture user emotions and feedback, we utilize sentiment analysis tools, surveys, and interactive features. Our platform operates on decentralized technology, ensuring enhanced security and privacy. By combining multiple applications within a unified interface, users can enjoy a range of functionalities through our centralized platform.
 
+# Proof-of-Concept
+
+https://github.com/Curltai/stressout/assets/25325227/92620d3c-8d60-4e68-b13c-3cf3c1e2d34e
+
+
 # Technical Implementation:
 
 The proof of concept (POC) of our web3 super app has been implemented using Flutter, a cross-platform mobile development framework. Flutter allows us to build applications that run on both iOS and Android platforms, ensuring a consistent user experience across devices.
@@ -136,3 +141,4 @@ For the validation of the proof of concept, we employed a manual testing approac
 # Supporting Materials
 
 - Design of product: [figma.com/stressout](https://www.figma.com/file/CO1A4nLoEq7k6uMqxJ4KAP/StressOut?type=design&node-id=1%3A5&t=46st7pI82VkiAXC8-1)
+- Video of PoC: [Poc-video.mp4](assets/PoC-video.mp4)
