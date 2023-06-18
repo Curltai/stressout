@@ -119,8 +119,8 @@ For the validation of the proof of concept, we employed a manual testing approac
 
 3. Machine Learning for Content Filtering:
 
-    - "Machine Learning Techniques for Content Filtering: A Comparative Study" by H. A. Basari, et al. (Link: https://www.researchgate.net/publication/2646781_Machine_Learning_Techniques_for_Content_Filtering_A_Comparative_Study)
-    - "Real-Time Sentiment Analysis of Twitter Data for Predicting Stock Market Movements" by M. Mohammed, et al. (Link: https://www.researchgate.net/publication/327676003_Real-Time_Sentiment_Analysis_of_Twitter_Data_for_Predicting_Stock_Market_Movements)
+    - "A machine learning approach to web page filtering using content and structure analysis" (Link: [https://www.researchgate.net/publication/2646781_Machine_Learning_Techniques_for_Content_Filtering_A_Comparative_Study](https://www.researchgate.net/publication/262405473_A_machine_learning_approach_to_web_page_filtering_using_content_and_structure_analysis))
+    - "Social Media Use and Its Connection to Mental Health"  (Link: [https://www.researchgate.net/publication/327676003_Real-Time_Sentiment_Analysis_of_Twitter_Data_for_Predicting_Stock_Market_Movements](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7364393/))
 
 4. Additional Resources:
 
