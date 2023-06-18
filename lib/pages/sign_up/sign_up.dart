@@ -46,7 +46,7 @@ class _SignUpState extends State<SignUp> {
 
       if (user != null) {
         Navigator.of(context).pushReplacement(
-          MaterialPageRoute(builder: (context) => MainPage()),
+          MaterialPageRoute(builder: (context) => const MainPage()),
         );
       }
     } on FirebaseAuthException catch (e) {
